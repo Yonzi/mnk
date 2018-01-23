@@ -20,8 +20,8 @@ bot.on("ready", function() {
 bot.on("message", function(message) {
     if (message.author.equals(bot.user)) return;
 
-    if (message.content == "i go sleep liao")
-    message.channel.sendMessage("Bye~");
+    if (message.content == "welcome")
+    message.channel.sendMessage("Irasshai!");
 
     if (!message.content.startsWith(PREFIX)) return;
 
@@ -41,9 +41,12 @@ bot.on("message", function(message) {
         case "details":
             var details = new Discord.RichEmbed()
                 .addField("BOT INSTRUCTIONS", " ===============")
-                .addField("dabBot", "Type !!!play < music name > and !!!choose < number > to play it. Prefix for this bot is ' !!! '.")
-                .addField("Minoka.chr, Created by Piixel", "Please type Mnk qna < questions > and she'll reply with a Yes, No and more. Furthermore, typing Mnk notice.me or Mnk give.hugs will program her to send you something special...well kinda")
-                .addField("Yuri.chr, Created by Piixel", "Use this bot only in 'The Bar', type Yuri,play < music name > for quick play, or type Yuri,search < music name > for more selections. Type Yuri,help if more info is needed.")
+                .addField("Tatsumaki", "all-purpose bot, but mainly leveling functionally. Type 
+                .addField("FredBoat♪♪", "Type ;;play < music name > and ;;< number > to play it. Prefix for this bot is ' ;; '.")
+                .addField("Vexera", "Type !play < music name > for quick play, or type !search < music name > for selections. Prefix for this bot is ' ! '.")
+                .addField("Kawaiibot", "Just a for fun bot, type +help if you're curious.")
+                .addField("Minoka.chr, Created by Piixel", "Please type Mnk qna < questions > and she'll reply with a Yes, No and more. Furthermore, typing Mnk notice.me or Mnk give.hugs will program her to send you something special...well kinda. (Only in Chat-lounge channel)")
+                .addField("Yuri.chr, Created by Piixel", "Head of Lounge private music bot.")
                 .setColor(0xff86d8)
                 .setFooter("- Message from Piixel, Head of Room.")
             message.channel.sendEmbed(details);
