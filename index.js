@@ -44,16 +44,16 @@ bot.on("message", function(message) {
                 .addField("Tatsumaki", "all-purpose bot, but mainly leveling functionally. Type t!help then t!help < command names > if you want to know more. (Only in # *tatsumakis-desk*")
                 .addField("FredBoat♪♪", "Type ;;play < music name > and ;;< number > to play it. Prefix for this bot is ' ;; '. (Only in # *music-hub*)")
                 .addField("Vexera", "Type !play < music name > for quick play, or type !search < music name > for selections. Prefix for this bot is ' ! '. (Only in # *music-bar*)")
-                .addField("Minoka.chr, Created by Piixel", "Please type Mnk qna < questions > and she'll reply with a Yes, No and more. Furthermore, typing Mnk notice.me or Mnk give.hugs will program her to send you something special...well kinda. (Only in # *chat-lounge*)")
-                .addField("Rin, Saved Piixel from depression in 2016", "Private(?) music bot. If interested, http://docs.shelter.host/Rin will be the command lists.")
+                .addField("Minoka.chr, Created by Piixel", "Please type Mnk qna < questions > and she'll reply with a Yes, No and more. Furthermore, typing Mnk noticeme or Mnk giveshug will program her to send you something special...well kinda. (Only in # *chat-lounge*)")
+                .addField("Rin, Cured Piixel from depression in 2016", "Private(?) music bot. If interested, http://docs.shelter.host/Rin will be the command lists. (i'm seriously with that **cured from depression** thing.)")
                 .setColor(0xff86d8)
                 .setFooter("- Message from Piixel, Head of Lounge.")
             message.channel.sendEmbed(details);
             break;
-        case "notice.me":
+        case "noticeme":
             message.channel.sendMessage(message.author.toString() + "https://pa1.narvii.com/6632/989aef578051d568b8b39d1a6640a968db6f7c76_hq.gif");
             break;
-        case "give.hugs":
+        case "giveshug":
             message.channel.sendMessage(message.author.toString() + "https://i.imgur.com/NdkhTra.gif");
             break;
         default:
