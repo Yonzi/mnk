@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
-const PREFIX = "Mnk ";
+const PREFIX = "est ";
 
 var fortunes = [
     "Yes",
     "No",
     "Don't know",
-    "Errrm, i don't know how to answar that...",
-    "What?",
+    "I don't know how to answer that.",
+    "What",
     "Wokay"
 ]
 
@@ -21,7 +21,7 @@ bot.on("message", function(message) {
     if (message.author.equals(bot.user)) return;
 
     if (message.content == "welcome")
-    message.channel.sendMessage("Irasshai!");
+    message.channel.sendMessage("enjoy your stay");
 
     if (!message.content.startsWith(PREFIX)) return;
 
@@ -29,10 +29,10 @@ bot.on("message", function(message) {
 
     switch (args[0].toLowerCase()) {
         case "test":
-            message.channel.sendMessage("Working!");
+            message.channel.sendMessage("Working");
             break;
         case "info":
-            message.channel.sendMessage("I'm Monika! President of Doki Doki Literature Club and the bot of ⛧Game Lounge.");
+            message.channel.sendMessage("est, bot of ⛧Game Lounge.");
             break;
         case "qna":
             if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
@@ -41,13 +41,13 @@ bot.on("message", function(message) {
         case "details":
             var details = new Discord.RichEmbed()
                 .addField("BOT INSTRUCTIONS", " ===============")
-                .addField("Tatsumaki", "all-purpose bot, but mainly leveling functionally. Type t!help then t!help < command names > if you want to know more. (Only in # *tatsumakis-desk*")
+                .addField("Tatsumaki", "all-purpose bot, but mainly leveling functionally. Type t!help then t!help < command names > if you want to know more. (Only in # *tatsumakis-desk*)")
                 .addField("FredBoat♪♪", "Type ;;play < music name > and ;;< number > to play it. Prefix for this bot is ' ;; '. (Only in # *music-hub*)")
                 .addField("Vexera", "Type !play < music name > for quick play, or type !search < music name > for selections. Prefix for this bot is ' ! '. (Only in # *music-bar*)")
-                .addField("Minoka.chr, Created by Piixel", "Please type Mnk qna < questions > and she'll reply with a Yes, No and more. Furthermore, typing Mnk noticeme or Mnk giveshug will program her to send you something special...well kinda. (Only in # *chat-lounge*)")
-                .addField("Rin, Cured Piixel from depression in 2016", "Private(?) music bot. If interested, http://docs.shelter.host/Rin will be the command lists. (i'm seriously with that **cured from depression** thing.)")
-                .setColor(0xff86d8)
-                .setFooter("- Message from Piixel, Head of Lounge.")
+                .addField("est", "a replacement...yeah")
+                .addField("Monika", "RIP 1 year of service")
+                .setColor(0xffffff)
+                .setFooter("- Message from Piiixel, Head of Lounge.")
             message.channel.sendEmbed(details);
             break;
         case "noticeme":
