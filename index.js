@@ -46,7 +46,7 @@ bot.on("message", function(message) {
                 .addField("Vexera", "Type !play < music name > for quick play, or type !search < music name > for selections. Prefix for this bot is ' ! '. (Only in # *music-bar*)")
                 .addField("est", "a replacement...yeah")
                 .addField("Monika", "RIP 1 year of service")
-                .setColor(0x5F3D8B)
+                .setColor(0x3F9EDE)
                 .setFooter("- Message from Piiixel, Head of Lounge.")
             message.channel.sendEmbed(details);
             break;
